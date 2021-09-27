@@ -1,0 +1,335 @@
+* {
+  text-decoration:none;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* ============= Header ============ */
+header{
+  background-color: #000;
+  padding: 30px;
+  height: 150px;
+}
+header .container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+ }
+header .container .wapper-logo{
+  width: 30%;
+  margin-left: 50px;
+ }
+
+header .container  .wapper-logo img{ 
+  height: 75%;
+  padding-top:20px;
+
+}
+header .container .menu{
+  width: 40%;
+ }
+
+header .container .menu nav ul{ 
+ display: flex;
+ flex-wrap: wrap;
+justify-content:center;
+position: relative;
+padding-top: 10px;
+
+}
+header .container .menu nav ul li{ 
+  margin-left: 40px;
+}
+header .container .menu nav ul li a {
+  display: block;
+}
+header .container .menu nav ul li a:hover {
+  background-color: #75DED7;
+}
+header .container .menu nav ul li a h3{
+  font-family: Barlow;
+  color: #FFFFFF
+}
+/* ============= BANNER ============ */
+
+section .banner{
+  background-image:url("/images/SLIDER.png");
+  width: 100%;
+  height: 642px;
+  display: flex;
+  position: block;
+}
+section .banner div {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+section .banner div h3{
+  font-family: Barlow;
+  position: relative;
+  left: 30%;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+section .banner div h2{
+  font-family: Barlow;
+  position: relative;
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+/* ============= Us ============ */
+.nosotros {
+  display: flex;
+  position: relative;
+  height: 500px;
+width: 100%;
+}
+.nosotros div{
+  flex: 1;
+}
+.nosotros .logoSillon{
+ 
+  display: flex;
+  justify-content: center;
+ 
+}
+.nosotros .logoSillon img{
+  width: 40%;
+  margin: auto;
+  display: block;
+ 
+}
+
+.nosotros .us{
+   padding-top: 100px;
+}
+.nosotros .us h2{
+  font-family: Garamond;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.nosotros .us p{
+  font-family: Garamond;
+  font-size: 2em;
+}
+/* ============= Novedosos ============ */
+section .novedosos{
+  background-image:url("/images/BANNER_sillon.png");
+  width: 100%;
+  height: 350px;
+  display: flex;
+  position: relative;
+  
+}
+section .novedosos div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+section .novedosos div h2{
+  position: relative;
+  font-size: 3rem;
+  color: #FFFFFF;
+  font-family: Garamond;
+}
+
+/* ============= Productos ============ */
+
+.products{
+margin-bottom: 100px;
+}
+.products .row{
+text-align: center;
+margin-top: 100px;
+
+}
+.products .row .col{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 120px;
+}
+
+.products .row .col h3{
+  font-size: 2rem;
+  margin-left: 60px;
+  font-family: Garamond;
+  color: #000;
+}
+
+.products .row .col h4{
+  color: gray;
+  margin-left: 60px;
+  font-family: Garamond;
+}
+
+.boton{
+  text-align: center;
+}
+.boton button{
+  width: 250px;
+  font-family: Barlow;
+  color: #FFFFFF;
+  background-color:#75DED7;
+  font-size: 24px;
+  padding: 14px 40px;
+  border: 0px
+  
+}
+/* ============= Formularios ============ */
+
+.contacto {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: #000;
+  vertical-align: top;
+}
+.contacto .formulario{
+  display: inline-block;
+  width: 50%;
+}
+.contacto .formulario h3{
+  margin-top: 50px;
+  position: relative;
+  margin-left: 50px;
+  top: 30px;
+  font-size: 2rem;
+  font-family: Garamond;
+  color: #FFFFFF;
+}
+.contacto.formulario.form {
+  position: relative;
+  
+}
+.contacto .formulario .form .izq{
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  padding-bottom: 20px;
+}
+.contacto .formulario .form .der{
+  position: relative;
+  display: inline-block;
+}
+.contacto .formulario .form input{
+  margin: 20px 0px;
+  font-size: 20px;
+  background-color: #000;
+  color: #FFFFFF;
+  border: none;
+  border-bottom: 2px solid #75DED7;
+}
+.contacto .formulario .form label{
+  font-size: 2rem;
+  font-family: Barlow;
+  color: #FFFFFF;
+  display: block;
+}
+.contacto .formulario .form .boton input{
+  position: absolute;
+  top: 440px;
+  left: 460px;
+  background-color: #75DED7;
+  font-size: 2rem;
+  padding: 5px 20px;
+  font-family: Barlow;
+  border-radius: 4px;
+}
+.contacto .formulario h3{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.contacto .formulario label{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.contacto .contactos{
+  vertical-align: top;
+  margin-top: 80px;
+  
+  display: inline-block;
+  height: 500px;
+  width: 23%;
+}
+.contacto .contactos h3{
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-family: Garamond;
+  color: #FFFFFF;
+  font-weight: bold;
+  
+}
+.contacto .contactos p{
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.contacto .contactos  i{
+  font-size: 1.3rem;
+  height: 15px;
+  width: 15px;
+  color: #75DED7;
+  margin-right: 20px;
+}
+.contacto .horario{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 80px;
+  height: 500px;
+  width: 23%;
+}
+.contacto .horario h3{
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-family: Garamond;
+  color: #FFFFFF;
+  font-weight: bold;
+
+}
+.contacto .horario p{
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* ============= Footer ============ */
+footer {
+  background-color: #75DED7;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+}
+footer .footer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+footer h1{
+  vertical-align: center;
+  color: #FFFFFF;
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 1.5rem; 
+}
+

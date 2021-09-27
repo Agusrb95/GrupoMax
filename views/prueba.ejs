@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Max</title>
+  <script src="https://kit.fontawesome.com/b49fa66fdf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="mainContainer">
+    <header>
+      <div class="container">
+        
+        <div class="wapper-logo">
+          <img src="images/LOGO.png" alt="">
+        </div>
+        
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#"><h3>INICIO </h3></a></li>
+              <li><a href="#"><h3>PRODUCTOS </h3></a></li>
+              <li><a href="#"><h3>CONTACTO</h3></a></li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+    </header>
+    <section>
+      <div class="banner">
+        <div>
+          <h3>MARCA TU</h3>
+          <h2>ESTILO PROPIO</h2>
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="nosotros">
+      <div class="logoSillon">
+        <img src="/images/ICONO_Sillon.png" alt="">
+      </div>
+      <div class="us">
+        <h2>Nosotros</h2>
+        <p>Nos dedicamos al diseño y restauración de muebles a pedido y a
+          tu gusto, para que sean únicos, irrepetibles y funcionales.
+          Nuestros diseños nacen de la imaginación y la pasión que
+          sentimos al crearlos. Buscamos generar piezas únicas en tu
+          espacio, priorizando sobre todo el confort.
+          Trabajamos muebles con espejos, con pintura glitter y con resina
+          epóxica.</p>
+        </div>
+        
+      </section>
+      
+      <section>
+        <div class="novedosos">
+          <div>
+            <h2>NOVEDOSOS Y BRILLANTES</h2>
+          </div>
+          
+        </div>
+        
+      </section>
+      
+      <section class="products">
+        <div class="row">
+          <div class="col">
+            <img src="/images/IMG_Cómoda.png" alt="">
+            <h3>Cómoda</h3>
+            <h4>Dormitorio</h4>
+          </div>
+          <div class="col">
+            <img src="/images/IMG_Sillon.png" alt="">
+            <h3>Silla</h3>
+            <h4>Cocina</h4>
+          </div>
+          <div class="col">
+            <img src="/images/IMG_MesaRatona.png" alt="">
+            <h3>Mesa ratona</h3>
+            <h4>Living/Comedor</h4>
+          </div>
+        </div>
+        <div class="boton">
+          <button>VER MÁS</button>
+        </div>
+        
+      </section>
+      
+      <section class="contacto">
+        <div class="formulario">
+          <h3>Formulario</h3>
+          <div class="form">
+            <form action="" method="" class="datos" name="myForm">
+              <div class="izq">
+                <label for="nombre">Nombre</label> 
+                <input type="text" id="nombre" name="nombre" class="inputForm">
+                <label for="email">E-mail:</label> 
+                <input type="text" id="email" name="email" class="inputForm">
+                <label for="telefono">Teléfono</label> 
+                <input type="number" id="telefono" name="telefono" class="inputForm">
+
+              </div>
+              <div class="der">
+                <label for="provincia">Provincia</label> 
+                <input type="text" id="provincia" name="provincia" class="inputForm">
+                <label for="horario">Horario de contacto</label> 
+                <input type="number" id="horario" name="horario" class="inputForm">
+                <label for="consulta">Consulta</label> 
+                <input type="text" id="consulta" name="consulta" class="inputForm">
+                
+
+              </div>
+              <div class="boton">
+                <input type="submit" id="submitButton" value="Enviar">
+              </div>
+              
+            </form>
+            
+          </div>
+          
+        </div>
+        <div class="contactos">
+          <h3>Contacto</h3>
+          
+            <p><i class="fas fa-phone-alt"></i>0800-000-0000</p>
+            <p><i class="fab fa-whatsapp"></i>11-00000000</p>
+            <p><i class="fas fa-map-marker-alt"></i>Lorem ipsum 555</p>
+        </div>
+        <div class="horario">
+          <h3>Horarios</h3>
+          <p>Lunes a Viernes</p>
+          <p>10:00 - 19:00 hs.</p>
+        </div>
+      </section>
+      <footer>
+        <div class="footer">
+          <h1>Todos los derechos reservados</h1>
+        </div>
+        
+      </footer>
+    </div>
+    <script> window.addEventListener("load",function(){
+      let formulario = document.querySelector("form.datos");
+    
+      formulario.addEventListener("submit",function(e){
+        e.preventDefault();
+        
+        let campoNombre= document.querySelector('#nombre')
+        let campoEmail= document.querySelector('#email')
+        let campoTelefono= document.querySelector('#telefono')
+        let campoProvincia= document.querySelector('#provincia')
+        let campoHorario= document.querySelector('#horario')
+        let campoConsulta= document.querySelector('#consulta')
+        
+        if(campoNombre.value=="" || campoEmail.value=="" || campoTelefono.value =="" || campoProvincia.value=="" || campoHorario.value =="" || campoConsulta.value==""){
+          alert("Falta llenar un campo")
+          return;
+        }
+        data={
+          nombre:campoNombre.value,
+          email:campoEmail.value,
+          telefono:campoTelefono.value,
+          provincia:campoProvincia.value,
+          horario:campoHorario.value,
+          consulta:campoConsulta.value
+      }
+      
+      
+        fetch('http://localhost:3000/', {
+          method : 'POST',
+          headers : {'Content-Type': 'application/json'},
+          body : JSON.stringify(data)
+        }).then(res => res.json())
+          .then(res => alert('Enviado correctamente'))
+          .catch(err => console.log(err))
+      
+      })
+    })</script>
+  </body>
+  </html>
